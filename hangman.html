@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANGMAN</title>
+    <link rel="stylesheet" href="hangman.css">
+</head>
+<body>
+
+    <div class="main_div">
+        <h1>HANGMAN GAME</h1>
+        <div class="diagram">
+            <div id="horizontalLine"></div>
+            <div style="display: flex;flex-direction: columns;">
+                <div id="verticalLine"></div>
+                <div id="moveableDiagram" style="display: flex;flex-direction: column;align-items: center;width:175px;">
+                    <div id="shortVerticalLine"></div>
+                    <div id="face">
+                        <div style="display: flex;flex-direction: row;justify-content: space-evenly;align-items: center;height:30px">
+                            <div id="eye"></div>
+                            <div id="eye"></div>
+                        </div>
+                        <div id="mouth_happy"></div>
+                    </div>
+                    <div style="display: flex;flex-direction: row;justify-content: center;">
+                        <div id="leftHand"></div>
+                        <div id="body"></div>
+                        <div id="rightHand"></div>
+                    </div>                 
+                    <div style="display: flex;flex-direction: row;justify-content: center">       
+                        <div id="leftLeg"></div>
+                        <div id="rightLeg"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="bottomLine"></div>
+        </div>
+        <div class="answer">
+        </div>
+        <div class="hint">
+        </div>
+        <div class="replay">
+            <button class="replayButton">PLAY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="hangman.js"></script>
+</body> 
+</html>

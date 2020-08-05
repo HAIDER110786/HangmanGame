@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+}
+
+.main_div{
+    height: 610px;
+    background-color:RGB(0, 155, 119);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_div h1{
+    font-family: sans-serif;
+    font-weight: 50;
+}
+
+.diagram{
+    height: 270px;
+    width: 180px;
+    padding: 20px;
+}
+
+#bottomLine{
+    height: 5px;
+    width: inherit;
+    background-color: black;
+}
+
+#verticalLine{
+    height: 250px;
+    width: 5px;
+    background-color: black;
+}
+
+#horizontalLine{
+    height: 5px;
+    width: 53%;
+    background-color: black;
+}
+
+#shortVerticalLine{
+    height: 25px;
+    width: 5px;
+    background-color: black;
+    visibility: hidden;
+}
+
+#face{
+    height: 50px;
+    width: 50px;
+    border: 5px solid black;
+    background-color: transparent;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+#body{
+    height: 80px;
+    width: 5px;
+    background-color: black;
+    visibility: hidden;
+}
+
+#leftHand{
+    height: 40px;
+    width: 5px;
+    background-color: black;
+    transform-origin: center;
+    transform: rotate(45deg);
+    transform-origin: top;
+    visibility: hidden;
+}
+
+#rightHand{
+    height: 40px;
+    width: 5px;
+    background-color: black;
+    transform: rotate(-45deg);
+    transform-origin: top;
+    visibility: hidden;
+}
+
+#eye{
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;;
+    background-color: black;
+    margin-top: 5px;
+}
+
+#leftLeg{
+    height: 40px;
+    width: 5px;
+    background-color: black;
+    transform-origin: center;
+    transform: rotate(45deg);
+    transform-origin: top;
+    visibility: hidden;
+}
+
+#rightLeg{
+    height: 40px;
+    width: 5px;
+    background-color: black;
+    transform: rotate(-45deg);
+    transform-origin: top;
+    visibility: hidden;
+}
+
+#leftHandHappy{
+    height: 40px;
+    width: 5px;
+    background-color: black;
+    transform-origin: center;
+    transform: rotate(120deg);
+    transform-origin: top;
+    visibility: hidden;
+}
+
+#rightHandHappy{
+    height: 40px;
+    width: 5px;
+    background-color: black;
+    transform: rotate(-120deg);
+    transform-origin: top;
+    visibility: hidden;
+}
+
+#mouth_happy{
+    height: 15px;
+    width: 23px;
+    border-bottom:3px solid black;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin: -10px auto;
+}
+
+#mouth_normal{
+    height: 3px;
+    width: 23px;
+    background-color: black;
+    margin: 3px auto;
+}
+
+#mouth_sad{
+    height: 12px;
+    width: 23px;
+    border-top:3px solid black;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin: 2px auto;
+}
+
+#mouth_WHATHAVEYOUDONE{
+    height: 12px;
+    width: 23px;
+    border-top:8px solid black;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin: 2px auto;
+}
+
+#mouth_WOOHOO{
+    height: 15px;
+    width: 23px;
+    border-bottom:8px solid black;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin: -10px auto;
+}
+
+.moveableAreaLeft{
+    transform: rotate(15deg);
+    transform-origin: top;
+}
+
+.moveableAreaBetweenMiddleAndLeft{
+    transform: rotate(7.5deg);
+    transform-origin: top;
+}
+
+.moveableAreaMiddle{
+    transform: rotate(0deg);
+    transform-origin: top;
+}
+
+.moveableAreaBetweenMiddleAndRight{
+    transform: rotate(-7.5deg);
+    transform-origin: top;
+}
+
+.moveableAreaRight{
+    transform: rotate(-15deg);
+    transform-origin: top;
+}
+
+.moveableDiagramSafe{
+    transform: rotate(0deg);
+    transform-origin: top;
+    justify-content: flex-end;
+    margin-bottom:-10px;
+}
+
+.answer{
+    display: flex;
+    flex-direction: row;
+}
+
+#alphabetWithoutText{
+    background-color: #e7e7e7;
+    border: 1px solid darkslategray;
+    margin: 5px;
+    padding: 20px;
+}
+
+#alphabetWithText{
+    background-color: #e7e7e7;
+    border: 1px solid darkslategray;
+    margin: 5px;
+    padding: 10px 16.45px;
+}
+
+.hint{
+    margin: 30px;
+    font-size: 25px;
+    font-weight: 70px;
+    font-family: sans-serif;
+}
+
+.replay button{
+    height: 50px;
+    width:200px;
+    border:none;    
+    border-radius:30px;
+    font-size: 20px;
+    background-color: forestgreen;
+    color: white;
+}
+
+.replay button:hover{
+    color: white;
+    background-color: #4CAF50;
+}
+
+.replay button:focus{
+    outline: none;
+}
+
+.replayButton{
+    visibility: hidden;
+}
